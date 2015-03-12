@@ -77,7 +77,7 @@ void doSweep(int delayval) {
 }
 
 void toggleEars() {
-    togglePos = DigitalRead(togglePin);
+    togglePos = digitalRead(togglePin);
     if(togglePos) {
       leftEar.write(0);
       rightEar.write(180);
